@@ -15,6 +15,7 @@ CREATE TABLE Utilisateur_possede_lien (Id_utilisateur INTEGER NOT NULL, Id_lien 
 
 -- Création de quelques utilisateurs
 INSERT INTO Utilisateurs(Username,Password) VALUES ('frede', '1M!tdePasse');
+INSERT INTO Utilisateurs(Username,Password) VALUES ('user', '@S@fePassword12');
 INSERT INTO Liens(Link,Id_utilisateur) VALUES ('deffunction',(SELECT id FROM Utilisateurs WHERE Username = "frede" AND Password = "1M!tdePasse"));
 INSERT INTO Liens(Link,Id_utilisateur) VALUES ('deffunction2',(SELECT id FROM Utilisateurs WHERE Username = "frede" AND Password = "1M!tdePasse"));
 
