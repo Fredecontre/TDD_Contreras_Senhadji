@@ -17,5 +17,6 @@ def add_user(username,password):
          return True
 
    print("Fail")
+   return False
 
 conn.commit()
