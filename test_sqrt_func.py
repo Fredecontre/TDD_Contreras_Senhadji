@@ -18,6 +18,7 @@ class TestSqrtFunc(unittest.TestCase):
 	def test_typeerror(self):
 		self.assertRaises(TypeError, sqrt_func, [4, 9])
 		self.assertRaises(TypeError, sqrt_func, 'A')
+		self.assertRaises(TypeError, sqrt_func, 6+4j)
 		
 if __name__ == '__main__':
 	unittest.main()
