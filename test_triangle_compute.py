@@ -6,11 +6,11 @@ class TestTriangleCompute(unittest.TestCase):
 	
 	def test_valueerror(self):
 		# side length condition
-		self.assertRaises(ValueError, triangle_compute, )
+		self.assertRaises(ValueError, triangle_compute, 2, 3, 4)
 		# null value
-		self.assertRaises(ValueError, triangle_compute, )
+		self.assertRaises(ValueError, triangle_compute, 0, 1, 2)
 		# negative value
-		self.assertRaises(ValueError, triangle_compute, )
+		self.assertRaises(ValueError, triangle_compute, -1, 2, 3)
 	
 	def test_triangle_compute(self):
 		# triangle lambda
