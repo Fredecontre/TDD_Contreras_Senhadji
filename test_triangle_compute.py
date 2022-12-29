@@ -6,7 +6,9 @@ class TestTriangleCompute(unittest.TestCase):
 	
 	def test_valueerror(self):
 		# side length condition
-		self.assertRaises(ValueError, triangle_compute, 2, 3, 4)
+		self.assertRaises(ValueError, triangle_compute, 2, 3, 6)
+		self.assertRaises(ValueError, triangle_compute, 6, 3, 2)
+		self.assertRaises(ValueError, triangle_compute, 2, 6, 3)
 		# null value
 		self.assertRaises(ValueError, triangle_compute, 0, 1, 2)
 		# negative value
