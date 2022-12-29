@@ -17,7 +17,7 @@ class TestListMin(unittest.TestCase):
 		self.assertRaises(TypeError, list_min, [0.5, 1, 0])
 		self.assertRaises(TypeError, list_min, ['a', 23, -4])
 		
-if __name__ = '__main__':
+if __name__ == '__main__':
 	unittest.main()
 		
 		
