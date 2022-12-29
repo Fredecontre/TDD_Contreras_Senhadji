@@ -16,8 +16,8 @@ class TestCirclePerim(unittest.TestCase):
 		
 	def test_typeerror(self):
 		self.assertRaises(TypeError, circle_perim, [])
-		self.assertRaises(TypeError, circle_perim, [])
-		self.assertRaises(TypeError, circle_perim, [])
+		self.assertRaises(TypeError, circle_perim, 'Hello')
+		self.assertRaises(TypeError, circle_perim, -2.4+0.8j)
 		
 if __name__ == '__main__':
 	unittest.main()
