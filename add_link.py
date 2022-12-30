@@ -5,6 +5,7 @@ conn.row_factory = sqlite3.Row
 c = conn.cursor()
 
 
+
 def user_is_valid(username,password):
    
    l, u, s, d = 0, 0, 0, 0
